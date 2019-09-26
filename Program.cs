@@ -17,6 +17,7 @@ namespace Encryption
                     case "1":
                         user.CreateAccount();
                         //method to create account
+                        Console.WriteLine("Change");
                         break;
                     case "2":
                         user.Authenticate();
