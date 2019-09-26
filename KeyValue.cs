@@ -4,7 +4,6 @@ namespace Encryption
 {
     public class KeyValue
     {
-        UserOptions useroption = new UserOptions();
 
         public Dictionary<string, string> dictionary = new Dictionary<string, string>();
 
@@ -12,7 +11,7 @@ namespace Encryption
         public string Password { get; set; }
         public void CreateDict()
         {
-            dictionary.Add(Username, Password);
+            dictionary.Add(this.Username, this.Password);
         }
 
 

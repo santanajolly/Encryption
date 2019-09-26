@@ -16,10 +16,17 @@ namespace Encryption
             key.Username = username;
             key.Password = password;
 
+            key.CreateDict();
+
+            Console.WriteLine("You have created your account!\n\n");
+
+
+
+
             //eventually add username and password requirements
         }
 
-        public void Login()
+        public void Authenticate()
         {
             Console.Write("Enter Username: ");
             string loginusername = Console.ReadLine();
@@ -29,12 +36,14 @@ namespace Encryption
 
             if (key.dictionary.ContainsKey(loginusername))
             {
-                //compare passord?
+                //username already exists
+                menu.MainMenu();
             }
             else if (!key.dictionary.ContainsKey(loginusername))
             {
-                Console.WriteLine("Username not found!");
-                menu.MainMenu();
+                //create account?
+                //todo
+
 
             }
         }
