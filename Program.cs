@@ -6,6 +6,7 @@ namespace Encryption
     {
         static void Main(string[] args)
         {
+            bool name = true;
             Menu menu = new Menu();
             UserOptions user = new UserOptions();
             menu.MainMenu();
@@ -16,8 +17,9 @@ namespace Encryption
                 {
                     case "1":
                         user.CreateAccount();
+                        menu.MainMenu();
+
                         //method to create account
-                        Console.WriteLine("Change");
                         break;
                     case "2":
                         user.Authenticate();

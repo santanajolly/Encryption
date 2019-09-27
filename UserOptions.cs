@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Encryption
 {
@@ -16,11 +17,10 @@ namespace Encryption
             key.Username = username;
             key.Password = password;
 
-            key.CreateDict();
+            key.CreateDict(username, password);
 
             Console.WriteLine("You have created your account!\n\n");
-
-
+            Thread.Sleep(3000);
 
 
             //eventually add username and password requirements

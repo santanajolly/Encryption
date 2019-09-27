@@ -7,6 +7,9 @@ namespace Encryption
     {
         public void MainMenu()
         {
+
+
+
             Console.Clear();
             Console.WriteLine("                       ACCOUNT AUTHENTICATION         \n\n");
             Console.WriteLine("                 Please Select 1 - 3 to Continue     \n                                                ");
@@ -18,6 +21,7 @@ namespace Encryption
             Console.WriteLine("          !                                              !                       ");
             Console.WriteLine("          [3. Exit                                       ]                     ");
             Console.WriteLine("           ***********************************************       ");
+
         }
     }
 }

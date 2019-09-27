@@ -9,7 +9,7 @@ namespace Encryption
 
         public string Username { get; set; }
         public string Password { get; set; }
-        public void CreateDict()
+        public void CreateDict(string username, string password)
         {
             dictionary.Add(this.Username, this.Password);
         }
